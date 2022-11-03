@@ -1,2 +1,2 @@
-# Repositorio_Heranca
+# Repositório Herança
  Desenvolvimentos com herança
