@@ -5,18 +5,20 @@ public class Bomba {
 	private double totallitros;
 	private double valorlitro;
 	
-	public Bomba(double totallitros, double valorlitro) {
-		this.totallitros = totallitros;
-		this.valorlitro = valorlitro;
+	public Bomba() {
+		setTotallitros(500);
+		setValorlitro(0);
 	}
 	
 	public double abastecerPorLitro(int litro) {
 		double valorpagar = litro * getValorlitro();
+		setTotallitros(getTotallitros() - litro);
 		return valorpagar;
 	}
 	
 	public double abastecerPorValor(double valor) {
 		double quantidadelitro = valor/getValorlitro();
+		setTotallitros(getTotallitros() - quantidadelitro);
 		return quantidadelitro;
 	}
 

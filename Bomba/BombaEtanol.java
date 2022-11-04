@@ -2,7 +2,8 @@ package Bomba;
 
 public class BombaEtanol extends Bomba{
 
-	public BombaEtanol(double totallitros, double valorlitro) {
-		super(totallitros, valorlitro);
-	}	
+	public BombaEtanol() {
+		setTotallitros(500);
+		setValorlitro(5);
+	}
 }
