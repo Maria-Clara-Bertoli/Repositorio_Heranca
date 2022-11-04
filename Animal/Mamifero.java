@@ -4,7 +4,7 @@ public class Mamifero extends Animal{
 	
 	private float temperatura;
 
-	public Mamifero(String sexo, int distancia, float alimentodia, String tipo, String som, float velocidade) {
+	public Mamifero(String sexo, int distancia, float alimentodia, String tipo, String som, float velocidade, float temperatura) {
 		super(sexo, distancia, alimentodia, tipo, som, velocidade);
 		this.temperatura = temperatura;
 	}
@@ -20,6 +20,7 @@ public class Mamifero extends Animal{
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
+		builder.append(super.toString());
 		builder.append("Mamifero [temperatura=");
 		builder.append(temperatura);
 		builder.append("]");

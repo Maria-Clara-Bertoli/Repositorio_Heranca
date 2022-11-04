@@ -16,12 +16,6 @@ public class Tartaruga extends Reptil{
 	public void setCasco(boolean casco) {
 		this.casco = casco;
 	}
-
-	@Override
-	public String definirTipo(String tipo) {
-		setTipo(tipo);
-		return getTipo();
-	}
 	
 	@Override
 	public String som() {
@@ -42,6 +36,7 @@ public class Tartaruga extends Reptil{
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
+		builder.append(super.toString());
 		builder.append("Tartaruga [casco=");
 		builder.append(casco);
 		builder.append("]");

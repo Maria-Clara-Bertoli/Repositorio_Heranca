@@ -30,6 +30,7 @@ public class Reptil extends Animal{
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
+		builder.append(super.toString());
 		builder.append("Reptil [nadar=");
 		builder.append(nadar);
 		builder.append("]");
